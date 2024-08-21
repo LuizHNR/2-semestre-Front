@@ -5,7 +5,6 @@ export default function Menu(){
 
     return(
         <div className={styles.menu}>
-            <h1>Teste Rotas</h1>
             <nav className="Menu">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/produtos">Produtos</Link></li>
