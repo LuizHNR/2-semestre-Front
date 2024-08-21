@@ -1,8 +1,12 @@
+import { Outlet } from "react-router-dom";
+import Menu from "./routes/Menu";
+
 export default function App() {
 
   return (
     <div>
-      <h1>Componente App</h1>
+      <Menu/>
+      <Outlet />
     </div>
   );
 }
