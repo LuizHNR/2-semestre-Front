@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
 // --------------------Importes utilizadas nas Rotas-------------------------
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.tsx';
 import Home from './routes/Home/index.tsx';
 import Error from './routes/Error/index.tsx';
@@ -18,8 +18,11 @@ const router = createBrowserRouter([
   ]}
 ]);
 
+
+// -------------Trocando o componente de transição das rotas--------------------
+//-----Trocar App por RouterProvider e passar para ele uma props com o nome de router=router------
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>,
 )
