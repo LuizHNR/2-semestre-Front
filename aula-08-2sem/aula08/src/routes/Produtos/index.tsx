@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { listaProdutos } from "../../listaProdutos";
-import { MinhaTabela } from "../../style/style";
+import { MinhaTabela } from "../../style/styles";
 
 export default function Produtos(){
 
@@ -44,9 +44,3 @@ export default function Produtos(){
       </div>
     );
   }
-  // id:number;
-  // nome:string;
-  // marca:string;
-  // desc:string;
-  // preco:number;
-  // foto:string;
