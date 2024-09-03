@@ -1,5 +1,13 @@
 import { Link } from "react-router-dom";
 import { listaProdutos } from "../../listaProdutos";
+import styled from "styled-components";
+
+const MinhaTabela = styled.table`
+  border-collapse: collapse;
+  width: 70%;
+  margin: 0 auto;
+  
+`
 
 export default function Produtos(){
 
@@ -7,7 +15,7 @@ export default function Produtos(){
       <div>
         <h1>Produtos Eletrônicos</h1>
 
-        <table>
+        <MinhaTabela>
           <thead>
             <tr>
               <th>Nome</th>
@@ -39,7 +47,7 @@ export default function Produtos(){
             </td>
           </tr>
         </tfoot>
-      </table>
+      </MinhaTabela>
       </div>
     );
   }
