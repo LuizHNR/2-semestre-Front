@@ -1,13 +1,6 @@
 import { Link } from "react-router-dom";
 import { listaProdutos } from "../../listaProdutos";
-import styled from "styled-components";
-
-const MinhaTabela = styled.table`
-  border-collapse: collapse;
-  width: 70%;
-  margin: 0 auto;
-  
-`
+import { MinhaTabela } from "../../style/style";
 
 export default function Produtos(){
 
