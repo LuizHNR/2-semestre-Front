@@ -2,7 +2,7 @@ import { TipoProduto } from "./types";
 
 const fotoPadrao = "https://via.placeholder.com/150";
 
-export const listaProdutos: TipoProduto[] = [
+export let listaProdutos: TipoProduto[] = [
     {
         id: 1,
         nome: "Smartphone Galaxy S21",
@@ -164,3 +164,8 @@ export const listaProdutos: TipoProduto[] = [
         foto: fotoPadrao
     }
 ];
+
+//Caso a lista não exista no localStorage, colocar
+if (!localStorage.getItem('lista')) {
+    localStorage.setItem("lista", JSON.stringify(listaProdutos));
+} 
