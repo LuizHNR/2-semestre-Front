@@ -2,7 +2,7 @@ import { TipoProduto } from "./types";
 
 const fotoPadrao = "https://via.placeholder.com/150";
 
-export let listaProdutos: TipoProduto[] = [
+export const listaProdutos: TipoProduto[] = [
     {
         id: 1,
         nome: "Smartphone Galaxy S21",

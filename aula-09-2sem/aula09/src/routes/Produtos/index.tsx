@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 import { MinhaTabela } from "../../style/styles";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { TipoProduto } from "../../types";
 import { listaProdutos } from "../../listaProdutos";
 
 export default function Produtos(){
-
-
 
 //Recepção dos dados que vem do UseState verificando se a lista está completa
 //Caso ela não esteja, é setado um array de string vazio
@@ -15,7 +13,6 @@ const lista:TipoProduto[] = JSON.parse(listaProdutosString);
 
 const [produtos] = useState<TipoProduto[]>(lista);
 
-  
     return(
       <div>
         <h1>Produtos Eletrônicos</h1>
